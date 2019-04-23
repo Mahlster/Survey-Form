@@ -1,0 +1,20 @@
+html {
+    background-color: rgba(0, 217, 255, 0.4);
+}
+
+body {
+    width: 700px;
+    margin: auto;
+    background-color: rgba(245, 245, 245, 0.8);
+    border: 0px solid;
+    border-radius: 8px;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    font-size: 16px;
+}
