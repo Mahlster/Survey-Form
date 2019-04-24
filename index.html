@@ -12,23 +12,23 @@
     <p id="description">Dites-nous comment nous pouvons améliorer freeCodeCamp</p>
 
     <form id="survey-form">
-      <div>
+      <div class="div">
         <label id="name-label" for="name">* Nom : </label> 
         <input type="text" name="name" id="name" placeholder="Entrez votre nom" required>
       </div>
-
-      <div>
+      <div class="div">
         <label id="email-label" for="email">* Email : </label>
-        <input type="text" name="email" id="email" placeholder="Entrez votre email" required>
+        <input type="email" name="email" id="email" placeholder="Entrez votre email" required>
       </div>
 
-      <div>
+      <div class="div">
         <label id="number-label" for="age">* Âge : </label>
         <input type="number" name="age" id="number" min="1" max="125" placeholder="Âge" required>
       </div>
 
-      <div>
-        <label for="role">Quelle option décrit le mieux votre rôle actuel ?</label>
+      <div id="role">
+        <label for="role">Quelle option décrit mieux votre rôle actuel ?</label>
+        <br>
         <select id="dropdown" name="role">
           <option disabled>Sélectionner une option</option>
           <option value="student">Étudiant</option>
@@ -38,26 +38,18 @@
         </select>
       </div>
 
-      <div>
-        <legend>Quelle est la probabilité que vous recommandiez freeCodeCamp à un ami ?</legend>
+      <div id="recommandation">
+        <legend>Quelle est la probabilité que vous recommandiez <br>freeCodeCamp à un ami ?</legend>
         <ul>
-          <li>
-            <label for="oui">Oui</label>
-            <input type="radio" id="oui" name="oui" value="1">
-          </li>
-          <li>
-            <label for="peut-etre">Peut-être</label>
-            <input type="radio" id="peut-etre" name="peut-etre" value="2">
-          </li>
-          <li>
-            <label for="non">Non</label>
-            <input type="radio" id="non" name="non" value="3">
-          </li>
+          <li class="radio"><label>Oui<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Peut-être<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Non<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
         </ul>
       </div>
 
-      <div>
+      <div id="top-like">
         <label for="most-like">Qu'est-ce que vous aimez le plus chez Free Code Camp ?</label>
+        <br>
         <select id="dropdown" name="most-like">
           <option disabled value="">Sélectionner une option</option>
           <option value="defi">Défi</option>
@@ -67,33 +59,23 @@
         </select>
       </div>
 
-      <div>
+      <div id="update">
         <legend>Choses qui devraient être améliorées à l'avenir</legend>
         <ul>
-          <li>
-            <label for="front-end">Font-end</label>
-            <input type="checkbox" name="front-end" value="1">
-          </li>
-          <li>
-            <label for="back-end">Back-end</label>
-            <input type="checkbox" name="back-end" value="2">
-          </li>
-          <li>
-            <label for="video">Video</label>
-            <input type="checkbox" name="video" value="3">
-          </li><li>
-            <label for="forum">Forum</label>
-            <input type="checkbox" name="forum" value="4">
-          </li>
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Défi</label></li>
         </ul>
       </div>
 
-      <div>
+      <div id="suggestion">
         <label for="commentaire">Des commentaires ou des suggestions?</label>
+        <br>
         <textarea id="commentaire" name="commentaire" placeholder="Entrez votre commentaire ici"></textarea>
       </div>
 
-      <div>
+      <div id="boutton">
         <button id="submit" type="submit">Soumettre</button>
       </div>
       

@@ -18,3 +18,45 @@ body {
     text-align: center;
     font-size: 16px;
 }
+
+#name-label {
+    padding-left: 200px;
+    padding-right: 20px;
+}
+
+#email-label {
+    padding-left: 200px;
+    padding-right: 13px;
+}
+
+#number-label {
+    padding-left: 200px;
+    padding-right: 25px;
+}
+
+#name, #email, #number, #dropdown, #commentaire {
+    width: 200px;
+}
+
+#role, #recommandation, #top-like, #update, #suggestion {
+    padding-left: 200px;
+    padding-bottom: 10px;
+}
+
+.div {
+    padding-bottom: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+#boutton {
+    text-align: center;
+    padding: 5px 0 10px 0;
+}
+
+#submit {
+    width: 120px;
+    height: 30px;
+}
